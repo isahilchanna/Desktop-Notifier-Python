@@ -1,18 +1,19 @@
 from plyer import notification
 import time
+def notifyy():
+    title = 'Hi, Hello and Hi !'
 
-title = 'Hi, Hello and Hi !'
+    message = 'If u reading this ~I LOVE U TO THE MOON AND BACK !!'
 
-message = 'If u reading this ~I LOVE U TO THE MOON AND BACK !!'
-
-notification.notify(title = title,
-                    message = message,
-                    #creating icon for the notification
-                    app_icon = "heart.ico",
-                    #the notification stays for 15sec
-                    timeout = 15,
-                    toast = False)
-
-#sleep for 1 hr => 60*60 sec
-#notification repeats after every 1 hr
-time.sleep(60*60)
+    notification.notify(title = title,
+                        message = message,
+                        #creating icon for the notification
+                        app_icon = "heart.ico",
+                        #the notification stays for 15sec
+                        timeout = 15,
+                        toast = False)
+if __name__ == '__main__':
+    while True:
+        notifyy()
+        #sleep for 4 hrs => 60*60*4 sec
+        time.sleep(0)
